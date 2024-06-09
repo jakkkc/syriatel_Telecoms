@@ -1,3 +1,4 @@
+![](download.png)
 # syriatel_Telecoms
 ## Overview
 Customer churn is a significant concern for Syriatel as it directly impacts revenue and growth. This project aims to identify the factors contributing to customer churn and provide actionable insights to reduce churn rates. By understanding these factors, Syriatel can tailor its services to improve customer satisfaction and retention.
