@@ -1,7 +1,7 @@
 ![](download.png)
 # syriatel_Telecoms
 ## Overview
-Customer churn is a significant concern for Syriatel as it directly impacts revenue and growth. This project aims to identify the factors contributing to customer churn and provide actionable insights to reduce churn rates. By understanding these factors, Syriatel can tailor its services to improve customer satisfaction and retention.
+This project focuses on analyzing and predicting customer churn for Syriatel, a telecommunications company. Customer churn is when customers stop using the company's services, which impacts revenue and growth. By identifying factors contributing to churn, Syriatel can develop strategies to improve customer retention.
 
 ## Objectives
 Identify the main factors driving customer churn at Syriatel.
@@ -12,10 +12,10 @@ Develop strategies to retain customers and reduce churn.
 The dataset comprises detailed information on 3,333 customers, encompassing 21 attributes that provide insights into customer behavior, service usage, and interactions with Syriatel.
 
 ### Key Variables
-Customer Demographics: Includes state and area code.
-Service Plans: Includes international plans and voice mail plans.
-Usage Metrics: Total minutes and calls during the day, evening, night, and international calls.
-Customer Service Interactions: Number of calls to customer service.
+Customer Demographics: Information such as the customer's state and area code to identify geographic patterns.
+Service Plans: Details about customers' international plans and voice mail plans.
+Usage Metrics: Total minutes and calls during different times of the day and international calls.
+Customer Service Interactions: Number of calls to customer service, indicating potential issues or dissatisfaction.
 
 ### Distribution Insights
 Customer Service Calls: Skewed right, most values at 1.
@@ -24,7 +24,7 @@ Account Length: Nearly normal distribution.
 Area Code: Bimodal distribution with spikes at 408, 415, and 510.
 
 ## Data Exploration
-Analyzing the key variables helps in understanding their distribution and relationships, which can identify factors contributing to customer churn.
+Analyzing the key variables to understand their distribution and relationships helps identify factors contributing to customer churn.
 
 ### Geographic Distribution
 Customers are distributed across various states and area codes, allowing us to identify regions with higher or lower churn rates.
@@ -62,7 +62,17 @@ Random Forest: Highest accuracy (93.9%) and precision (0.857).
 Decision Tree: Balanced approach with good precision (0.667) and recall (0.693).
 Logistic Regression: High recall (0.782) but low precision (0.401).
 ### Confusion Matrix
+Random Forest: Highest true positives and true negatives, lowest false positives and negatives.
+Decision Tree: Balanced approach with good precision and recall.
+Logistic Regression: Highest recall but low precision.
+
 Random Forest: Best performance with highest true positives and true negatives, lowest false positives, and false negatives.
+
+### Accuracy
+Random Forest: Best accuracy (93.9%), precision (0.857), and recall (0.713).
+Decision Tree: Accuracy (90.1%), precision (0.667), and recall (0.693).
+Logistic Regression: Accuracy (79.0%), precision (0.401), and recall (0.782).
+
 ### ROC Curve
 Random Forest: Closest to the top left corner, indicating higher true positive rates for lower false positive rates.
 ## Conclusion
